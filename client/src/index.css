@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* One font stack and a soft page colour for the whole app */
+@layer base {
+  html {
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+  /* a clear focus ring for keyboard users on every focusable thing */
+  :where(a, button, input, select, textarea, summary):focus-visible {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+  }
+}

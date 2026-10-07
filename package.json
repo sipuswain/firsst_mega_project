@@ -1,0 +1,34 @@
+{
+  "name": "mega-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test \"tests/unit/*.test.js\"",
+    "test:stock": "node tests/stockCheck.js",
+    "test:api": "node tests/apiCheck.js",
+    "seed:admin": "node scripts/seedAdmin.js",
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cloudinary": "^2.7.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.9.4",
+    "morgan": "^1.12.0",
+    "multer": "^2.0.2",
+    "nodemailer": "^10.0.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
